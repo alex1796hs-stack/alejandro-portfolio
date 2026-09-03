@@ -1,69 +1,18 @@
-import { motion } from 'framer-motion'
-
 export const Contact = () => {
   return (
-    <section id="contact" className="min-h-screen flex items-center justify-center px-6 py-32">
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true, amount: 0.3 }}
-        transition={{ duration: 0.8 }}
-        className="max-w-3xl w-full text-center"
-      >
-        <h2 className="text-5xl md:text-6xl font-bold mb-12 text-text-primary">Let's Work Together</h2>
-        
-        <motion.p
-          className="text-2xl text-text-secondary mb-16 leading-relaxed"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.1, duration: 0.8 }}
-        >
-          Have a project in mind? I'd love to discuss it with you.
-        </motion.p>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.2, duration: 0.8 }}
-          className="flex flex-col sm:flex-row gap-6 justify-center mb-20"
-        >
-          <a
-            href="mailto:hello@example.com"
-            className="px-8 py-4 bg-accent text-bg-base font-bold rounded-lg hover:opacity-80 transition-opacity"
-          >
-            Send Email
-          </a>
-          <a
-            href="#"
-            className="px-8 py-4 border border-accent text-accent font-bold rounded-lg hover:bg-accent/10 transition-colors"
-          >
-            View Resume
-          </a>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.3, duration: 0.8 }}
-          className="pt-12 border-t border-bg-lighter"
-        >
-          <div className="flex justify-center gap-8 mb-8">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-accent transition-colors">
-              GitHub
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-accent transition-colors">
-              LinkedIn
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-accent transition-colors">
-              Twitter
-            </a>
-          </div>
-          <p className="text-text-tertiary text-sm">© 2024 Alejandro Calvo. All rights reserved.</p>
-        </motion.div>
-      </motion.div>
+    <section id="contact" className="bg-[#2d3238] text-white py-24 md:py-32 px-8 w-full mt-10">
+      <div className="flex flex-col items-center justify-center gap-10">
+        {/* Mail Icon */}
+        <a href="mailto:hello@example.com" className="hover:opacity-70 transition-opacity block outline-none border-none">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="#ffffff" className="text-white">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+        </a>
+        <div className="h-[2px] bg-white/20 w-48"></div>
+        <p className="text-[10px] md:text-xs uppercase tracking-widest text-white/50 font-semibold mt-4">
+          © {new Date().getFullYear()} ALEJANDRO CALVO
+        </p>
+      </div>
     </section>
   )
 }

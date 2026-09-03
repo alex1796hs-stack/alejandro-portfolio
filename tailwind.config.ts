@@ -7,30 +7,25 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+      },
       colors: {
         bg: {
-          base: '#080808',
-          lighter: '#101010',
-          card: '#151515',
+          app: '#e5e7eb', // Light gray outer background
+          window: '#ffffff', // White inner window
+          bar: '#33363e', // Dark browser top bar
+          footer: '#1a1a1a', // Very dark footer
         },
         text: {
-          primary: '#ffffff',
-          secondary: '#b0b0b0',
-          tertiary: '#808080',
+          dark: '#1a1a1a',
+          muted: '#6b7280',
+          light: '#ffffff',
         },
-        accent: {
-          DEFAULT: '#00d4ff', // Cyan como default (puede cambiar)
-          blue: '#0099ff',
-          purple: '#aa3bff',
-          green: '#00d97e',
-          cyan: '#00d4ff',
+        border: {
+          subtle: '#e5e7eb',
+          dark: '#374151',
         },
-      },
-      backgroundImage: {
-        'gradient-purple': 'linear-gradient(135deg, rgba(10, 8, 20, 0.8) 0%, rgba(170, 59, 255, 0.35) 50%, rgba(147, 51, 234, 0.22) 100%)',
-      },
-      backdropBlur: {
-        xs: '2px',
       },
     },
   },

@@ -1,56 +1,56 @@
-import { motion } from 'framer-motion'
-
 export const About = () => {
   return (
-    <section id="about" className="min-h-screen flex items-center justify-center px-6 py-32 bg-bg-lighter">
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true, amount: 0.3 }}
-        transition={{ duration: 0.8 }}
-        className="max-w-3xl w-full"
-      >
-        <h2 className="text-5xl md:text-6xl font-bold mb-12 text-text-primary">About Me</h2>
+    <section id="about" className="py-24 md:py-40 px-8 w-full max-w-5xl mx-auto">
+      {/* 3 Columns matching reference: Icon + 4 horizontal lines */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-12">
         
-        <div className="space-y-8 text-lg text-text-secondary leading-relaxed">
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1, duration: 0.8 }}
-          >
-            I'm a passionate developer with expertise in building scalable web applications. 
-            With a strong foundation in frontend and backend technologies, I create seamless 
-            user experiences combined with robust server-side solutions.
-          </motion.p>
-          
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
-          >
-            I'm constantly learning and exploring new technologies to stay at the forefront 
-            of web development. Currently focused on React, TypeScript, and modern DevOps practices.
-          </motion.p>
+        {/* Column 1: Star */}
+        <div className="flex flex-col items-center">
+          <div className="mb-12 text-[#2d3238] transform scale-150">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+          </div>
+          <div className="w-full max-w-[160px] space-y-5">
+            <div className="thin-line bg-[#2d3238]"></div>
+            <div className="thin-line bg-[#2d3238]"></div>
+            <div className="thin-line bg-[#2d3238]"></div>
+            <div className="thin-line bg-[#2d3238] w-[80%] mx-auto"></div>
+          </div>
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.3, duration: 0.8 }}
-          className="mt-12 pt-12 border-t border-bg-card"
-        >
-          <h3 className="text-xl font-bold mb-6 text-text-primary">Key Highlights</h3>
-          <ul className="space-y-3 text-text-tertiary">
-            <li>✨ 5+ years of web development experience</li>
-            <li>🚀 Expertise in React, TypeScript, Node.js, and modern web frameworks</li>
-            <li>🎨 Passionate about UI/UX design and animations</li>
-            <li>📚 Continuous learner and open-source contributor</li>
-          </ul>
-        </motion.div>
-      </motion.div>
+        {/* Column 2: Pin */}
+        <div className="flex flex-col items-center">
+          <div className="mb-12 text-[#2d3238] transform scale-150">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </div>
+          <div className="w-full max-w-[160px] space-y-5">
+            <div className="thin-line bg-[#2d3238]"></div>
+            <div className="thin-line bg-[#2d3238]"></div>
+            <div className="thin-line bg-[#2d3238]"></div>
+            <div className="thin-line bg-[#2d3238] w-[80%] mx-auto"></div>
+          </div>
+        </div>
+
+        {/* Column 3: Document */}
+        <div className="flex flex-col items-center">
+          <div className="mb-12 text-[#2d3238] transform scale-150">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/>
+            </svg>
+          </div>
+          <div className="w-full max-w-[160px] space-y-5">
+            <div className="thin-line bg-[#2d3238]"></div>
+            <div className="thin-line bg-[#2d3238]"></div>
+            <div className="thin-line bg-[#2d3238]"></div>
+            <div className="thin-line bg-[#2d3238] w-[80%] mx-auto"></div>
+          </div>
+        </div>
+
+      </div>
     </section>
   )
 }
