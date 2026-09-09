@@ -5,6 +5,7 @@ import { Projects } from './components/Projects'
 import { Experience } from './components/Experience'
 import { Contact } from './components/Contact'
 import { Education } from './components/Education'
+import { Stack } from './components/Stack'
 import './index.css'
 
 function App() {
@@ -22,6 +23,8 @@ function App() {
         <Experience />
 
         <Education />
+
+        <Stack />
 
         <Contact />
       </main>

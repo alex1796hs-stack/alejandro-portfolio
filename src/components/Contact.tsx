@@ -1,17 +1,79 @@
 export const Contact = () => {
   return (
-    <section id="contact" className="bg-[#2d3238] text-white py-24 md:py-32 px-8 w-full mt-10">
-      <div className="flex flex-col items-center justify-center gap-10">
-        {/* Mail Icon */}
-        <a href="mailto:hello@example.com" className="hover:opacity-70 transition-opacity block outline-none border-none">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="#ffffff" className="text-white">
-            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-          </svg>
+    <section id="contact" className="contact-section">
+      <div className="contact-header">
+        <span>08 — Contact</span>
+        <span>Let&apos;s Talk</span>
+      </div>
+
+      <div className="contact-main">
+        <div className="contact-intro">
+          <span className="contact-label">Open to opportunities</span>
+
+          <h2 className="contact-title">
+            LET&apos;S BUILD
+            <br />
+            SOMETHING
+            <br />
+            USEFUL.
+          </h2>
+        </div>
+
+        <div className="contact-description">
+          <p>
+            I&apos;m open to frontend, full-stack and software development
+            opportunities.
+          </p>
+
+          <p>
+            If you have an interesting project or opportunity, feel free to
+            get in touch.
+          </p>
+        </div>
+      </div>
+
+      <div className="contact-links">
+        <a
+          href="mailto:alex1796hs@gmail.com"
+          className="contact-link"
+        >
+          <span className="contact-link-label">Email</span>
+          <span className="contact-link-value">
+            alex1796hs@gmail.com
+          </span>
+          <span className="contact-link-arrow">↗</span>
         </a>
-        <div className="h-[2px] bg-white/20 w-48"></div>
-        <p className="text-[10px] md:text-xs uppercase tracking-widest text-white/50 font-semibold mt-4">
-          © {new Date().getFullYear()} ALEJANDRO CALVO
-        </p>
+
+        <a
+          href="https://www.linkedin.com/in/alejandro-jes%C3%BAs-calvo-gonz%C3%A1lez-846544382/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="contact-link"
+        >
+          <span className="contact-link-label">LinkedIn</span>
+          <span className="contact-link-value">
+            Alejandro Jesús Calvo González
+          </span>
+          <span className="contact-link-arrow">↗</span>
+        </a>
+
+        <a
+          href="https://github.com/alex1796hs-stack"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="contact-link"
+        >
+          <span className="contact-link-label">GitHub</span>
+          <span className="contact-link-value">
+            alex1796hs-stack
+          </span>
+          <span className="contact-link-arrow">↗</span>
+        </a>
+      </div>
+
+      <div className="contact-footer">
+        <span>© {new Date().getFullYear()} ALEJANDRO CALVO</span>
+        <span>MADRID · SPAIN</span>
       </div>
     </section>
   )

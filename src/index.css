@@ -1645,3 +1645,716 @@ button {
     width: 90%;
   }
 }
+
+/* ─────────────────────────────────────────────
+   Technical Stack
+───────────────────────────────────────────── */
+
+.stack-section {
+  width: 100%;
+  padding: 140px 64px 120px;
+  background: #080808;
+}
+
+.stack-header {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 18px;
+
+  border-bottom: 1px solid var(--line);
+
+  font-size: 0.65rem;
+  font-weight: 500;
+
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.stack-intro {
+  padding: 70px 0 100px;
+}
+
+.stack-intro h2 {
+  margin: 0;
+
+  font-size: clamp(3.5rem, 8vw, 9rem);
+  font-weight: 700;
+
+  line-height: 0.84;
+  letter-spacing: -0.065em;
+
+  color: #f5f5f5;
+}
+
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  column-gap: 100px;
+  row-gap: 80px;
+
+  border-top: 1px solid var(--line);
+}
+
+.stack-group {
+  padding-top: 25px;
+}
+
+.stack-group-header {
+  margin-bottom: 25px;
+}
+
+.stack-group-header span {
+  font-size: 0.65rem;
+  font-weight: 500;
+
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.stack-technologies {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 10px 24px;
+}
+
+.stack-technology {
+  font-size: clamp(1.15rem, 1.8vw, 1.65rem);
+  font-weight: 400;
+
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+
+  color: rgba(255, 255, 255, 0.82);
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.stack-technology:hover {
+  color: #f5f5f5;
+  transform: translateX(4px);
+}
+
+
+/* ─────────────────────────────────────────────
+   Technical Stack — Mobile
+───────────────────────────────────────────── */
+
+@media (max-width: 767px) {
+  .stack-section {
+    padding: 100px 24px 80px;
+  }
+
+  .stack-header {
+    gap: 20px;
+  }
+
+  .stack-header span:last-child {
+    text-align: right;
+  }
+
+  .stack-intro {
+    padding: 55px 0 70px;
+  }
+
+  .stack-intro h2 {
+    font-size: clamp(3rem, 13vw, 5rem);
+  }
+
+  .stack-grid {
+    grid-template-columns: 1fr;
+
+    row-gap: 55px;
+  }
+
+  .stack-group {
+    padding-top: 20px;
+  }
+
+  .stack-technologies {
+    gap: 9px 18px;
+  }
+
+  .stack-technology {
+    font-size: 1.15rem;
+  }
+}
+
+/* ─────────────────────────────────────────────
+   Technical Stack
+───────────────────────────────────────────── */
+
+.stack-section {
+  width: 100%;
+  padding: 140px 64px 120px;
+  background: #080808;
+}
+
+.stack-header {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 18px;
+
+  border-bottom: 1px solid var(--line);
+
+  font-size: 0.65rem;
+  font-weight: 500;
+
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.stack-intro {
+  padding: 70px 0 100px;
+}
+
+.stack-intro h2 {
+  margin: 0;
+
+  font-size: clamp(3.5rem, 8vw, 9rem);
+  font-weight: 700;
+
+  line-height: 0.84;
+  letter-spacing: -0.065em;
+
+  color: #f5f5f5;
+}
+
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  column-gap: 100px;
+  row-gap: 80px;
+
+  border-top: 1px solid var(--line);
+}
+
+.stack-group {
+  padding-top: 25px;
+}
+
+.stack-group-header {
+  margin-bottom: 25px;
+}
+
+.stack-group-header span {
+  font-size: 0.65rem;
+  font-weight: 500;
+
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.stack-technologies {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 10px 24px;
+}
+
+.stack-technology {
+  font-size: clamp(1.15rem, 1.8vw, 1.65rem);
+  font-weight: 400;
+
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+
+  color: rgba(255, 255, 255, 0.82);
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.stack-technology:hover {
+  color: #f5f5f5;
+  transform: translateX(4px);
+}
+
+
+/* ─────────────────────────────────────────────
+   Technical Stack — Mobile
+───────────────────────────────────────────── */
+
+@media (max-width: 767px) {
+  .stack-section {
+    padding: 100px 24px 80px;
+  }
+
+  .stack-header {
+    gap: 20px;
+  }
+
+  .stack-header span:last-child {
+    text-align: right;
+  }
+
+  .stack-intro {
+    padding: 55px 0 70px;
+  }
+
+  .stack-intro h2 {
+    font-size: clamp(3rem, 13vw, 5rem);
+  }
+
+  .stack-grid {
+    grid-template-columns: 1fr;
+
+    row-gap: 55px;
+  }
+
+  .stack-group {
+    padding-top: 20px;
+  }
+
+  .stack-technologies {
+    gap: 9px 18px;
+  }
+
+  .stack-technology {
+    font-size: 1.15rem;
+  }
+}
+
+/* ─────────────────────────────────────────────
+   Technical Stack
+───────────────────────────────────────────── */
+
+.stack-section {
+  width: 100%;
+  padding: 140px 64px 120px;
+  background: #080808;
+}
+
+.stack-header {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 18px;
+
+  border-bottom: 1px solid var(--line);
+
+  font-size: 0.65rem;
+  font-weight: 500;
+
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.stack-intro {
+  padding: 70px 0 100px;
+}
+
+.stack-intro h2 {
+  margin: 0;
+
+  font-size: clamp(3.5rem, 8vw, 9rem);
+  font-weight: 700;
+
+  line-height: 0.84;
+  letter-spacing: -0.065em;
+
+  color: #f5f5f5;
+}
+
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  column-gap: 100px;
+  row-gap: 80px;
+
+  border-top: 1px solid var(--line);
+}
+
+.stack-group {
+  padding-top: 25px;
+}
+
+.stack-group-header {
+  margin-bottom: 25px;
+}
+
+.stack-group-header span {
+  font-size: 0.65rem;
+  font-weight: 500;
+
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.stack-technologies {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 10px 24px;
+}
+
+.stack-technology {
+  font-size: clamp(1.15rem, 1.8vw, 1.65rem);
+  font-weight: 400;
+
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+
+  color: rgba(255, 255, 255, 0.82);
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.stack-technology:hover {
+  color: #f5f5f5;
+  transform: translateX(4px);
+}
+
+
+/* ─────────────────────────────────────────────
+   Technical Stack — Mobile
+───────────────────────────────────────────── */
+
+@media (max-width: 767px) {
+  .stack-section {
+    padding: 100px 24px 80px;
+  }
+
+  .stack-header {
+    gap: 20px;
+  }
+
+  .stack-header span:last-child {
+    text-align: right;
+  }
+
+  .stack-intro {
+    padding: 55px 0 70px;
+  }
+
+  .stack-intro h2 {
+    font-size: clamp(3rem, 13vw, 5rem);
+  }
+
+  .stack-grid {
+    grid-template-columns: 1fr;
+
+    row-gap: 55px;
+  }
+
+  .stack-group {
+    padding-top: 20px;
+  }
+
+  .stack-technologies {
+    gap: 9px 18px;
+  }
+
+  .stack-technology {
+    font-size: 1.15rem;
+  }
+}
+
+
+/* ─────────────────────────────────────────────
+   Technical Stack — Tablet
+───────────────────────────────────────────── */
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .stack-section {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .stack-intro h2 {
+    font-size: clamp(4rem, 8vw, 7rem);
+  }
+
+  .stack-grid {
+    column-gap: 60px;
+  }
+}
+
+/* ─────────────────────────────────────────────
+   Contact
+───────────────────────────────────────────── */
+
+.contact-section {
+  width: 100%;
+  padding: 140px 64px 32px;
+  background: #080808;
+  color: #f5f5f5;
+}
+
+.contact-header {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 18px;
+
+  border-bottom: 1px solid var(--line);
+
+  font-size: 0.65rem;
+  font-weight: 500;
+
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.contact-main {
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr;
+
+  gap: 100px;
+
+  padding: 90px 0 110px;
+}
+
+.contact-label {
+  display: block;
+
+  margin-bottom: 28px;
+
+  font-size: 0.65rem;
+  font-weight: 500;
+
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.contact-title {
+  margin: 0;
+
+  font-size: clamp(4.5rem, 10vw, 11rem);
+  font-weight: 800;
+
+  line-height: 0.78;
+  letter-spacing: -0.075em;
+
+  color: #f5f5f5;
+}
+
+.contact-description {
+  align-self: end;
+
+  max-width: 420px;
+
+  padding-bottom: 8px;
+}
+
+.contact-description p {
+  margin: 0 0 22px;
+
+  font-size: clamp(1rem, 1.4vw, 1.25rem);
+  font-weight: 400;
+
+  line-height: 1.45;
+
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.contact-description p:last-child {
+  margin-bottom: 0;
+}
+
+.contact-links {
+  width: 100%;
+
+  border-top: 1px solid var(--line);
+}
+
+.contact-link {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 0.6fr 1fr auto;
+  align-items: center;
+
+  gap: 30px;
+
+  width: 100%;
+
+  padding: 25px 0;
+
+  border-bottom: 1px solid var(--line);
+
+  text-decoration: none;
+
+  transition:
+    padding-left 0.35s ease,
+    color 0.35s ease;
+}
+
+.contact-link:hover {
+  padding-left: 12px;
+}
+
+.contact-link-label {
+  font-size: 0.65rem;
+  font-weight: 500;
+
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.contact-link-value {
+  font-size: clamp(1rem, 1.6vw, 1.4rem);
+  font-weight: 400;
+
+  letter-spacing: -0.02em;
+
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.contact-link-arrow {
+  font-size: 1.2rem;
+  font-weight: 300;
+
+  color: rgba(255, 255, 255, 0.45);
+
+  transition:
+    transform 0.35s ease,
+    color 0.35s ease;
+}
+
+.contact-link:hover .contact-link-arrow {
+  transform: translate(4px, -4px);
+  color: #f5f5f5;
+}
+
+.contact-footer {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 20px;
+
+  font-size: 0.6rem;
+  font-weight: 500;
+
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
+/* ─────────────────────────────────────────────
+   Contact — Tablet
+───────────────────────────────────────────── */
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .contact-section {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .contact-main {
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 60px;
+  }
+
+  .contact-title {
+    font-size: clamp(4rem, 9vw, 8rem);
+  }
+}
+
+
+/* ─────────────────────────────────────────────
+   Contact — Mobile
+───────────────────────────────────────────── */
+
+@media (max-width: 767px) {
+  .contact-section {
+    padding: 100px 24px 24px;
+  }
+
+  .contact-header {
+    gap: 20px;
+  }
+
+  .contact-header span:last-child {
+    text-align: right;
+  }
+
+  .contact-main {
+    grid-template-columns: 1fr;
+
+    gap: 55px;
+
+    padding: 60px 0 70px;
+  }
+
+  .contact-title {
+    font-size: clamp(3.7rem, 15vw, 6rem);
+    line-height: 0.8;
+  }
+
+  .contact-description {
+    max-width: 100%;
+  }
+
+  .contact-description p {
+    font-size: 1rem;
+  }
+
+  .contact-link {
+    grid-template-columns: 1fr auto;
+
+    gap: 8px;
+
+    padding: 22px 0;
+  }
+
+  .contact-link-label {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .contact-link-value {
+    grid-column: 1;
+    grid-row: 2;
+
+    font-size: 1rem;
+  }
+
+  .contact-link-arrow {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+
+  .contact-footer {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
