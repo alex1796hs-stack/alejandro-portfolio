@@ -1,6 +1,8 @@
+import { useLanguage } from '../context/LanguageContext'
+
 const stackGroups = [
     {
-        title: 'Frontend',
+        key: 'frontend' as const,
         technologies: [
             'React',
             'TypeScript',
@@ -11,9 +13,8 @@ const stackGroups = [
             'Tailwind CSS',
         ],
     },
-
     {
-        title: 'Backend',
+        key: 'backend' as const,
         technologies: [
             'Python',
             'FastAPI',
@@ -22,10 +23,9 @@ const stackGroups = [
             'PHP',
             'REST APIs',
         ],
-
     },
     {
-        title: 'Data',
+        key: 'data' as const,
         technologies: [
             'PostgreSQL',
             'MySQL',
@@ -34,7 +34,7 @@ const stackGroups = [
         ],
     },
     {
-        title: 'Tools',
+        key: 'tools' as const,
         technologies: [
             'Docker',
             'Git',
@@ -43,7 +43,7 @@ const stackGroups = [
         ],
     },
     {
-        title: 'AI & Other',
+        key: 'ai' as const,
         technologies: [
             'Generative AI',
             'AI-assisted Development',
@@ -54,28 +54,30 @@ const stackGroups = [
 ]
 
 export const Stack = () => {
+    const { t } = useLanguage()
+
     return (
         <section id="stack" className="stack-section">
             <div className="stack-header">
-                <span>07 — Technical Stack</span>
-                <span>Current Toolset</span>
+                <span>{t.stack.technicalStack}</span>
+                <span>{t.stack.currentToolset}</span>
             </div>
 
             <div className="stack-intro">
                 <h2>
-                    TOOLS I USE
+                    {t.stack.title}
                     <br />
-                    TO BUILD
+                    {t.stack.titleLine2}
                     <br />
-                    DIGITAL PRODUCTS.
+                    {t.stack.titleLine3}
                 </h2>
             </div>
 
             <div className="stack-grid">
                 {stackGroups.map((group) => (
-                    <div className="stack-group" key={group.title}>
+                    <div className="stack-group" key={group.key}>
                         <div className="stack-group-header">
-                            <span>{group.title}</span>
+                            <span>{t.stack[group.key]}</span>
                         </div>
 
                         <div className="stack-technologies">

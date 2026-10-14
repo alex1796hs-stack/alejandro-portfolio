@@ -1,104 +1,71 @@
+import { useLanguage } from '../context/LanguageContext'
+
 export const Experience = () => {
+    const { t } = useLanguage()
+
     return (
         <section id="experience" className="experience-section">
-
             {/* Header */}
-
             <div className="experience-header">
-                <span>04 — Experience</span>
-                <span>Professional</span>
+                <span>{t.experience.experience}</span>
+                <span>{t.experience.professional}</span>
             </div>
 
-
             {/* Main experience */}
-
             <div className="experience-item">
-
                 <div className="experience-meta">
-
-                    <span>2025 — Now</span>
-
-                    <span>Madrid, Spain</span>
-
+                    <span>{t.experience.date}</span>
+                    <span>{t.experience.location}</span>
                 </div>
 
-
                 <div className="experience-main">
-
                     <div className="experience-title">
-
                         <h2>
-                            FRONTEND
+                            {t.experience.title}
                             <br />
-                            DEVELOPER
+                            {t.experience.titleLine2}
                         </h2>
 
                         <span className="experience-company">
                             Motoreto
                         </span>
-
                     </div>
 
-
                     <div className="experience-description">
-
                         <span className="info-label">
-                            Role
+                            {t.experience.role}
                         </span>
 
-                        <p>
-                            Frontend development and maintenance of
-                            web applications, working across different
-                            technologies and collaborating within a
-                            development team.
-                        </p>
-
+                        <p>{t.experience.description}</p>
 
                         <div className="experience-responsibilities">
-
                             <span>Vue.js</span>
                             <span>React</span>
                             <span>JavaScript</span>
                             <span>PHP</span>
                             <span>HTML / CSS</span>
-                            <span>Responsive UI</span>
+                            <span>{t.experience.responsiveUi}</span>
                             <span>Git</span>
-                            <span>Code Reviews</span>
-
+                            <span>{t.experience.codeReviews}</span>
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
 
-
             {/* Previous professional background */}
-
             <div className="experience-background">
-
                 <div>
                     <span className="info-label">
-                        Previous background
+                        {t.experience.previousBackground}
                     </span>
 
                     <span className="experience-background-title">
                         10+ YEARS
                     </span>
-
                 </div>
 
-                <p>
-                    Before moving into software development,
-                    I worked for more than a decade in hospital
-                    environments. That experience developed
-                    strong skills in responsibility, adaptability,
-                    communication, teamwork and problem solving.
-                </p>
-
+                <p>{t.experience.backgroundDescription}</p>
             </div>
-
         </section>
     )
 }

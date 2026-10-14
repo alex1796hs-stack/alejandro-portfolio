@@ -1,30 +1,32 @@
+import { useLanguage } from '../context/LanguageContext'
+
 export const Education = () => {
+    const { t } = useLanguage()
+
     return (
         <section id="education" className="education-section">
-
             {/* Header */}
             <div className="education-header">
-                <span>05 — Education & Certifications</span>
-                <span>Learning</span>
+                <span>{t.education.education}</span>
+                <span>{t.education.learning}</span>
             </div>
 
             {/* Statement */}
             <div className="education-main">
                 <h2>
-                    DEVELOPMENT
+                    {t.education.title}
                     <br />
-                    IS A CONTINUOUS
+                    {t.education.titleLine2}
                     <br />
-                    PROCESS.
+                    {t.education.titleLine3}
                 </h2>
             </div>
 
             {/* Education */}
             <div className="education-block">
-
                 <div className="education-block-header">
                     <span className="info-label">
-                        Education
+                        {t.education.educationLabel}
                     </span>
 
                     <span className="education-year">
@@ -33,35 +35,31 @@ export const Education = () => {
                 </div>
 
                 <div className="education-content">
-
                     <div>
                         <h3>
-                            Técnico Superior en Desarrollo
+                            {t.education.educationTitle}
                             <br />
-                            de Aplicaciones Multiplataforma
+                            {t.education.educationTitleLine2}
                         </h3>
 
                         <span className="education-institution">
-                            CCC · Centro Oficial de Formación Profesional
+                            {t.education.educationInstitution}
                             <br />
-                            Madrid, Spain
+                            {t.education.educationCity}
                         </span>
                     </div>
 
                     <span className="education-type">
-                        Higher Vocational Training
+                        {t.education.higherVocationalTraining}
                     </span>
-
                 </div>
-
             </div>
 
             {/* Certifications */}
             <div className="certifications-block">
-
                 <div className="certifications-header">
                     <span className="info-label">
-                        Certifications & Courses
+                        {t.education.certificationsCourses}
                     </span>
 
                     <span className="education-year">
@@ -77,8 +75,10 @@ export const Education = () => {
                         </span>
 
                         <div className="certification-info">
-                            <span>Introducción a la IA Generativa</span>
-                            <small>MIT Professional Education · 8h</small>
+                            <span>{t.education.generativeAi}</span>
+                            <small>
+                                MIT Professional Education · 8h
+                            </small>
                         </div>
                     </div>
 
@@ -88,8 +88,10 @@ export const Education = () => {
                         </span>
 
                         <div className="certification-info">
-                            <span>Ciberseguridad y Hacking Ético</span>
-                            <small>BIG school · 6h</small>
+                            <span>{t.education.cybersecurity}</span>
+                            <small>
+                                BIG school · 6h
+                            </small>
                         </div>
                     </div>
 
@@ -99,8 +101,10 @@ export const Education = () => {
                         </span>
 
                         <div className="certification-info">
-                            <span>SEO para IA y Google</span>
-                            <small>BIGSEO / BIG school · 6h</small>
+                            <span>{t.education.seoAiGoogle}</span>
+                            <small>
+                                BIGSEO / BIG school · 6h
+                            </small>
                         </div>
                     </div>
 
@@ -110,8 +114,10 @@ export const Education = () => {
                         </span>
 
                         <div className="certification-info">
-                            <span>Prompting responsable: maximiza la IA en tu negocio</span>
-                            <small>Microsoft & Founderz · 8h</small>
+                            <span>{t.education.responsiblePrompting}</span>
+                            <small>
+                                Microsoft & Founderz · 8h
+                            </small>
                         </div>
                     </div>
 
@@ -121,8 +127,12 @@ export const Education = () => {
                         </span>
 
                         <div className="certification-info">
-                            <span>Business English, Part 1</span>
-                            <small>Santander Open Academy · 8h</small>
+                            <span>
+                                Business English, Part 1
+                            </span>
+                            <small>
+                                Santander Open Academy · 8h
+                            </small>
                         </div>
                     </div>
 
@@ -132,8 +142,12 @@ export const Education = () => {
                         </span>
 
                         <div className="certification-info">
-                            <span>Google: Inteligencia Artificial y productividad</span>
-                            <small>Santander Open Academy · 2h</small>
+                            <span>
+                                {t.education.googleAiProductivity}
+                            </span>
+                            <small>
+                                Santander Open Academy · 2h
+                            </small>
                         </div>
                     </div>
 
@@ -143,8 +157,10 @@ export const Education = () => {
                         </span>
 
                         <div className="certification-info">
-                            <span>Copilot: Fundamentos de IA de Microsoft</span>
-                            <small>Santander Open Academy</small>
+                            <span>{t.education.copilot}</span>
+                            <small>
+                                Santander Open Academy
+                            </small>
                         </div>
                     </div>
 
@@ -154,8 +170,10 @@ export const Education = () => {
                         </span>
 
                         <div className="certification-info">
-                            <span>Introducción a la programación con Python</span>
-                            <small>Santander Open Academy</small>
+                            <span>{t.education.python}</span>
+                            <small>
+                                Santander Open Academy
+                            </small>
                         </div>
                     </div>
 
@@ -165,8 +183,10 @@ export const Education = () => {
                         </span>
 
                         <div className="certification-info">
-                            <span>SEO y Content Marketing</span>
-                            <small>ISDI</small>
+                            <span>{t.education.seoContent}</span>
+                            <small>
+                                ISDI
+                            </small>
                         </div>
                     </div>
 
@@ -176,21 +196,21 @@ export const Education = () => {
                         </span>
 
                         <div className="certification-info">
-                            <span>Excel — de básico a intermedio</span>
-                            <small>Santander Open Academy</small>
+                            <span>{t.education.excel}</span>
+                            <small>
+                                Santander Open Academy
+                            </small>
                         </div>
                     </div>
 
                 </div>
-
             </div>
 
             {/* Currently learning */}
             <div className="learning-block">
-
                 <div>
                     <span className="info-label">
-                        Currently Learning
+                        {t.education.currentlyLearning}
                     </span>
 
                     <h3>
@@ -201,11 +221,9 @@ export const Education = () => {
                 </div>
 
                 <span className="learning-status">
-                    IN PROGRESS
+                    {t.education.inProgress}
                 </span>
-
             </div>
-
         </section>
     )
 }

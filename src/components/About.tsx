@@ -1,78 +1,56 @@
+import { useLanguage } from '../context/LanguageContext'
+
 export const About = () => {
+  const { t } = useLanguage()
+
   return (
     <section id="about" className="about-section">
-
       {/* Header */}
-
       <div className="about-header">
-        <span>03 — About</span>
-        <span>Software Developer</span>
+        <span>{t.about.about}</span>
+        <span>{t.about.softwareDeveloper}</span>
       </div>
-
 
       {/* Main statement */}
-
       <div className="about-main">
-
         <h2>
-          SOFTWARE DEVELOPER
+          {t.about.title}
           <br />
-          WITH A BACKGROUND
+          {t.about.titleLine2}
           <br />
-          IN HEALTHCARE.
+          {t.about.titleLine3}
         </h2>
-
       </div>
 
-
       {/* Content */}
-
       <div className="about-content">
-
         <div className="about-intro">
-
           <span className="info-label">
-            Background
+            {t.about.background}
           </span>
 
-          <p>
-            I'm a software developer with a background
-            in healthcare and more than 10 years of
-            experience working in hospital environments.
-          </p>
+          <p>{t.about.description}</p>
 
-          <p>
-            That experience taught me how to work under
-            pressure, adapt quickly, communicate effectively
-            and pay attention to detail.
-          </p>
-
+          <p>{t.about.description2}</p>
         </div>
 
-
         <div className="about-skills">
-
           <span className="info-label">
-            Transferable skills
+            {t.about.transferableSkills}
           </span>
 
           <div className="about-skills-list">
-
-            <span>Problem Solving</span>
-            <span>Attention to Detail</span>
-            <span>Adaptability</span>
-            <span>Teamwork</span>
-            <span>Communication</span>
-            <span>Responsibility</span>
-            <span>Critical Thinking</span>
-            <span>Continuous Learning</span>
-
+            <span>{t.about.problemSolving}</span>
+            <span>{t.about.attentionToDetail}</span>
+            <span>{t.about.adaptability}</span>
+            <span>{t.about.teamwork}</span>
+            <span>{t.about.communication}</span>
+            <span>{t.about.responsibility}</span>
+            <span>{t.about.criticalThinking}</span>
+            <span>{t.about.continuousLearning}</span>
           </div>
-
         </div>
-
       </div>
-
     </section>
   )
 }

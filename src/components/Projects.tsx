@@ -4,14 +4,18 @@ import placementTest from '../assets/01-placement-test.png'
 import placementResult from '../assets/02-placement-result.png'
 import lessons from '../assets/03-lessons.png'
 import profileProgress from '../assets/ChatGPT Image 6 sept 2026, 20_20_15.png'
-import sharenergyVideo from '../assets/Sharenergy-portfolio-final.mp4'
 
+import sharenergyVideo from '../assets/Sharenergy-portfolio-final.mp4'
 import sharenergyLanding from '../assets/01-landing-qr.png'
 import sharenergySelection from '../assets/02-powerbank-selection.png'
 import sharenergyRental from '../assets/03-rental-timer.png'
 import sharenergyPayment from '../assets/04-payment-summary.png'
 
+import { useLanguage } from '../context/LanguageContext'
+
 export const Projects = () => {
+  const { t } = useLanguage()
+
   return (
     <section id="projects">
 
@@ -22,22 +26,22 @@ export const Projects = () => {
       <div className="work-intro">
 
         <div className="work-intro-header">
-          <span>02 — Selected Work</span>
-          <span>02 Projects</span>
+          <span>{t.projects.selectedWork}</span>
+          <span>{t.projects.projectCount}</span>
         </div>
 
         <div className="work-intro-content">
 
           <h2>
-            BUILDING DIGITAL
+            {t.projects.title}
             <br />
-            PRODUCTS WITH
+            {t.projects.titleLine2}
             <br />
-            CODE &amp; PURPOSE.
+            {t.projects.titleLine3}
           </h2>
 
           <span className="work-intro-scroll">
-            ↓ Explore
+            ↓ {t.projects.explore}
           </span>
 
         </div>
@@ -51,15 +55,11 @@ export const Projects = () => {
 
       <div className="featured-project">
 
-        {/* Section heading */}
-
         <div className="featured-header">
-          <span>01 — Featured Project</span>
-          <span>01 / 02</span>
+          <span>{t.projects.featuredProject}</span>
+          <span>{t.projects.featuredProjectCount}</span>
         </div>
 
-
-        {/* Project title */}
 
         <div className="featured-title-wrapper">
 
@@ -73,8 +73,6 @@ export const Projects = () => {
 
         </div>
 
-
-        {/* Main video */}
 
         <div className="featured-video-wrapper">
 
@@ -90,20 +88,16 @@ export const Projects = () => {
         </div>
 
 
-        {/* Project information */}
-
         <div className="featured-info">
 
           <div className="featured-description">
 
             <span className="info-label">
-              About the project
+              {t.projects.aboutProject}
             </span>
 
             <p>
-              An AI-powered English learning platform
-              designed around structured progression,
-              assessment and daily learning.
+              {t.projects.easylearnDescription}
             </p>
 
           </div>
@@ -112,11 +106,10 @@ export const Projects = () => {
           <div className="featured-technologies">
 
             <span className="info-label">
-              Technologies
+              {t.projects.technologies}
             </span>
 
             <div className="technology-list">
-
               <span>React</span>
               <span>TypeScript</span>
               <span>FastAPI</span>
@@ -124,7 +117,6 @@ export const Projects = () => {
               <span>SQLAlchemy</span>
               <span>Docker</span>
               <span>JWT</span>
-
             </div>
 
           </div>
@@ -133,7 +125,7 @@ export const Projects = () => {
           <div className="featured-links">
 
             <span className="info-label">
-              Explore
+              {t.projects.explore}
             </span>
 
             <a
@@ -149,58 +141,43 @@ export const Projects = () => {
         </div>
 
 
-        {/* Supporting screenshots */}
-
         <div className="featured-gallery">
 
           <div className="gallery-item">
-
             <img
               src={placementTest}
-              alt="EasyLearn placement test"
+              alt={t.projects.placementTest}
             />
-
           </div>
 
-
           <div className="gallery-item">
-
             <img
               src={placementResult}
-              alt="EasyLearn placement result"
+              alt={t.projects.placementResult}
             />
-
           </div>
 
-
           <div className="gallery-item">
-
             <img
               src={lessons}
-              alt="EasyLearn lesson interface"
+              alt={t.projects.lessonInterface}
             />
-
           </div>
 
-
           <div className="gallery-item">
-
             <img
               src={profileProgress}
-              alt="EasyLearn profile and learning progress"
+              alt={t.projects.profileProgress}
             />
-
           </div>
 
         </div>
 
 
-        {/* Bottom project label */}
-
         <div className="featured-footer">
 
           <span>
-            AI ENGLISH LEARNING PLATFORM
+            {t.projects.aiEnglishLearningPlatform}
           </span>
 
           <span>
@@ -210,25 +187,31 @@ export const Projects = () => {
         </div>
 
       </div>
-      {/* Sharenergy */}
+
+
+      {/* ─────────────────────────────────────────
+          Sharenergy
+      ───────────────────────────────────────── */}
 
       <div className="secondary-project">
 
-        {/* Project header */}
         <div className="secondary-project-header">
-          <span>02 / 02 — Selected Project</span>
+          <span>{t.projects.selectedProject}</span>
           <span>2026</span>
         </div>
 
-        {/* Project title */}
+
         <div className="secondary-project-title-wrapper">
+
           <h2 className="secondary-project-title">
             Sharenergy
           </h2>
+
         </div>
 
-        {/* Main video */}
+
         <div className="secondary-project-video-wrapper">
+
           <video
             className="secondary-project-video"
             src={sharenergyVideo}
@@ -237,27 +220,29 @@ export const Projects = () => {
             loop
             playsInline
           />
+
         </div>
 
-        {/* Project information */}
+
         <div className="secondary-project-info">
 
           <div className="secondary-project-description">
+
             <span className="info-label">
-              About the project
+              {t.projects.aboutProject}
             </span>
 
             <p>
-              A full-stack web prototype for renting portable
-              powerbanks through QR-based stations, with
-              availability management, rental tracking and
-              automated billing logic.
+              {t.projects.sharenergyDescription}
             </p>
+
           </div>
 
+
           <div className="secondary-project-technologies">
+
             <span className="info-label">
-              Technologies
+              {t.projects.technologies}
             </span>
 
             <div className="technology-list">
@@ -269,11 +254,14 @@ export const Projects = () => {
               <span>HTML</span>
               <span>CSS</span>
             </div>
+
           </div>
 
+
           <div className="secondary-project-links">
+
             <span className="info-label">
-              Explore
+              {t.projects.explore}
             </span>
 
             <a
@@ -283,50 +271,59 @@ export const Projects = () => {
             >
               GitHub ↗
             </a>
+
           </div>
 
         </div>
 
-        {/* Screenshots */}
+
         <div className="secondary-project-gallery">
 
           <div className="secondary-gallery-item">
             <img
               src={sharenergyLanding}
-              alt="Sharenergy landing and QR access"
+              alt={t.projects.landingQr}
             />
           </div>
 
           <div className="secondary-gallery-item">
             <img
               src={sharenergySelection}
-              alt="Sharenergy powerbank selection"
+              alt={t.projects.powerbankSelection}
             />
           </div>
 
           <div className="secondary-gallery-item">
             <img
               src={sharenergyRental}
-              alt="Sharenergy rental timer"
+              alt={t.projects.rentalTimer}
             />
           </div>
 
           <div className="secondary-gallery-item">
             <img
               src={sharenergyPayment}
-              alt="Sharenergy payment summary"
+              alt={t.projects.paymentSummary}
             />
           </div>
 
         </div>
 
-        {/* Footer */}
+
         <div className="secondary-project-footer">
-          <span>POWERBANK RENTAL WEB CONCEPT</span>
-          <span>JAVA / JAVALIN / SQLITE</span>
+
+          <span>
+            {t.projects.powerbankRentalWebConcept}
+          </span>
+
+          <span>
+            JAVA / JAVALIN / SQLITE
+          </span>
+
         </div>
 
       </div>
+
     </section>
   )
 }

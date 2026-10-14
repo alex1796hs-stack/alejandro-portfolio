@@ -1,34 +1,34 @@
+import { useLanguage } from '../context/LanguageContext'
+
 export const Contact = () => {
+  const { t } = useLanguage()
+
   return (
     <section id="contact" className="contact-section">
       <div className="contact-header">
-        <span>08 — Contact</span>
-        <span>Let&apos;s Talk</span>
+        <span>{t.contact.contact}</span>
+        <span>{t.contact.letsTalk}</span>
       </div>
 
       <div className="contact-main">
         <div className="contact-intro">
-          <span className="contact-label">Open to opportunities</span>
+          <span className="contact-label">
+            {t.contact.openToOpportunities}
+          </span>
 
           <h2 className="contact-title">
-            LET&apos;S BUILD
+            {t.contact.title}
             <br />
-            SOMETHING
+            {t.contact.titleLine2}
             <br />
-            USEFUL.
+            {t.contact.titleLine3}
           </h2>
         </div>
 
         <div className="contact-description">
-          <p>
-            I&apos;m open to frontend, full-stack and software development
-            opportunities.
-          </p>
+          <p>{t.contact.description}</p>
 
-          <p>
-            If you have an interesting project or opportunity, feel free to
-            get in touch.
-          </p>
+          <p>{t.contact.description2}</p>
         </div>
       </div>
 
@@ -37,11 +37,17 @@ export const Contact = () => {
           href="mailto:alex1796hs@gmail.com"
           className="contact-link"
         >
-          <span className="contact-link-label">Email</span>
+          <span className="contact-link-label">
+            {t.contact.email}
+          </span>
+
           <span className="contact-link-value">
             alex1796hs@gmail.com
           </span>
-          <span className="contact-link-arrow">↗</span>
+
+          <span className="contact-link-arrow">
+            ↗
+          </span>
         </a>
 
         <a
@@ -50,11 +56,17 @@ export const Contact = () => {
           rel="noopener noreferrer"
           className="contact-link"
         >
-          <span className="contact-link-label">LinkedIn</span>
-          <span className="contact-link-value">
-            Alejandro Jesús Calvo González
+          <span className="contact-link-label">
+            {t.contact.linkedin}
           </span>
-          <span className="contact-link-arrow">↗</span>
+
+          <span className="contact-link-value">
+            Alejandro Calvo González
+          </span>
+
+          <span className="contact-link-arrow">
+            ↗
+          </span>
         </a>
 
         <a
@@ -63,17 +75,26 @@ export const Contact = () => {
           rel="noopener noreferrer"
           className="contact-link"
         >
-          <span className="contact-link-label">GitHub</span>
+          <span className="contact-link-label">
+            {t.contact.github}
+          </span>
+
           <span className="contact-link-value">
             alex1796hs-stack
           </span>
-          <span className="contact-link-arrow">↗</span>
+
+          <span className="contact-link-arrow">
+            ↗
+          </span>
         </a>
       </div>
 
       <div className="contact-footer">
-        <span>© {new Date().getFullYear()} ALEJANDRO CALVO</span>
-        <span>MADRID · SPAIN</span>
+        <span>
+          © {new Date().getFullYear()} ALEJANDRO CALVO
+        </span>
+
+        <span>{t.contact.madrid}</span>
       </div>
     </section>
   )

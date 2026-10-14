@@ -1,41 +1,39 @@
+import { useLanguage } from '../context/LanguageContext'
+
 export const Hero = () => {
+  const { t } = useLanguage()
+
   return (
     <section id="hero" className="hero-section">
-
-      {/* Introduction */}
       <div className="hero-meta">
-        <span>01 — Introduction</span>
+        <span>{t.hero.introduction}</span>
 
         <span className="hero-location">
-          Madrid, Spain
+          {t.hero.location}
         </span>
 
-        <span>2026</span>
+        <span>{t.hero.year}</span>
       </div>
 
-      {/* Main content */}
       <div className="hero-content">
-
         <h1 className="hero-title">
-          ALEJANDRO
+          {t.hero.title}
         </h1>
 
         <h2 className="hero-subtitle">
-          SOFTWARE DEVELOPER
+          {t.hero.subtitle}
         </h2>
 
         <p className="hero-stack">
-          FRONTEND · FULL STACK · CLOUD
+          {t.hero.stack}
         </p>
-
       </div>
 
-      {/* Bottom */}
       <div className="hero-bottom">
-        <span>Selected work ↓</span>
-        <span>Scroll to explore</span>
-      </div>
+        <span>{t.hero.selectedWork}</span>
 
+        <span>{t.hero.scroll}</span>
+      </div>
     </section>
   )
 }
